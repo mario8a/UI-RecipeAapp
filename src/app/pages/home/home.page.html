@@ -1,0 +1,41 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="bg-app">
+    <ion-buttons slot="end">
+      <ion-icon class="color-search" name="search-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="bg-app ion-padding">
+
+  <ion-slides>
+    <ion-slide>
+      <img class="img-slide__principal" src="../../../assets/img/card-populares.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img class="img-slide__principal" src="../../../assets/img/card-populares.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img class="img-slide__principal" src="../../../assets/img/card-populares.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img class="img-slide__principal" src="../../../assets/img/card-populares.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-text class="encabezado" color="primary">
+    Categorias
+  </ion-text>
+
+  <ion-slides [options]="slideOpts">
+
+    <ion-slide *ngFor="let categoria of categorias" class="slide">
+      <img class="img-categoria" [src]="categoria.foto" alt="">
+      <ion-text class="text-pizza">
+        {{categoria.nombreCate}}
+      </ion-text>
+    </ion-slide>
+
+  </ion-slides>
+ 
+</ion-content>

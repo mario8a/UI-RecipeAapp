@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>tiendita</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon class="color-search" name="search-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-slides  [options]="slideOpts">
+    <ion-slide *ngFor="let cate of categorias">
+      <ion-card>
+        <img [src]="cate.foto" alt="">
+        <ion-card-content>
+          <ion-text>
+            {{cate.nombreCate}}
+          </ion-text>
+        </ion-card-content>
+      </ion-card> 
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

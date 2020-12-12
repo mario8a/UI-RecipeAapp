@@ -24,3 +24,13 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.bg-app {
+   --background: #F4FCFF;
+}
+
+.encabezado {
+   font-size: 24px;
+   font-weight: bold;
+}
