@@ -9,7 +9,7 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <ion-slides  [options]="slideOpts">
+  <!-- <ion-slides  [options]="slideOpts">
     <ion-slide *ngFor="let cate of categorias">
       <ion-card>
         <img [src]="cate.foto" alt="">
@@ -20,6 +20,32 @@
         </ion-card-content>
       </ion-card> 
     </ion-slide>
+  </ion-slides> -->
+
+
+  <ion-slides  [options]="slideCateOpts">
+    <ion-slide class="categorias-slide" *ngFor="let personaje of personajes">
+      <ion-card [routerLink]="['/categorias', personaje.id]">
+        <img [src]="personaje.image" alt="">
+        <ion-card-content>
+          <ion-text>
+            {{personaje.name}}
+          </ion-text>
+        </ion-card-content>
+      </ion-card> 
+    </ion-slide>
   </ion-slides>
+
+  <ion-text class="ion-text-color">
+    Ion text
+  </ion-text>
+
+  <p class="parrafo-color">
+    Parrafo
+  </p>
+
+  <!-- <ion-button (click)="obtenerInfo()" expand="block">
+    Mostrar modal
+  </ion-button> -->
 
 </ion-content>
