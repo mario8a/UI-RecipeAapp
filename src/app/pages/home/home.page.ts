@@ -36,7 +36,13 @@ export class HomePage {
     }
   ]
 
-  fakeArray = [1,1,1,1,1,1];
+  fakeArray = [1];
+  
+  fakeArrayCategorias = [1];
+
+  fakeArrayCategoriasSecu = [1];
+
+  fakeArrayCategoriasTerc = [1,1,1]
 
   constructor() {}
 

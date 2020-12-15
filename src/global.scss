@@ -30,7 +30,46 @@
    --background: #F4FCFF;
 }
 
+.color-gris {
+   color: #B7C3CE;
+}
+
 .encabezado {
-   font-size: 24px;
+   font-size: 20px;
    font-weight: bold;
+}
+
+.img-receta-listado {
+   width: 345px;
+   height: 140px;
+   border-radius: 20px;
+   margin-top: 5px;
+}
+
+.nombre-receta-listado {
+   font-size: 18px;
+   font-weight: 500;
+   margin-top: 5px;
+}
+
+.desciption-receta-listado {
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.column-icons-receta-listado {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.icons-receta-listado {
+   font-size: 20px;
+   margin-left: -10px;
+}
+
+.texto-icons-receta-listado {
+   font-size: 14px;
+   font-weight: 400;
+   margin-left: 5px;
 }
