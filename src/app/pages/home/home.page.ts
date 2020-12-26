@@ -20,7 +20,7 @@ export class HomePage {
     },
     {
       foto: 'https://images.unsplash.com/photo-1562281556-0f8c259a9f3a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGFzdGFzfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      nombreCate: 'pastas'
+      nombreCate: 'Pastas'
     },
     {
       foto: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FsYWR8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
